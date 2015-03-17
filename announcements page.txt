@@ -1,0 +1,228 @@
+
+Current Location
+
+    FEW_X_400561_2014_110 Advanced Programming (2014-2015)
+    Announcements
+
+Hide Course Menu
+Menu Management Options
+
+    Refresh
+    Display Course Menu in a Window
+
+Course Menu:
+FEW_X_400561_2014_110 (Advanced Programming (2014-2015))
+Course Entry Page
+
+    Announcements
+    Course Information
+    Contacts
+    Course Documents
+    Planning
+    Tools
+    Schedule
+    Practool
+
+My Groups
+
+    Group EM 09
+    Group Homepage: Group EM 09
+
+View options
+
+    View All
+    Course (active tab)
+    Institution
+
+Announcements
+Content
+
+    Assignment 3
+
+    Posted on: Tuesday, October 14, 2014 9:02:42 PM CEST
+
+    Hi all,
+
+    For those of you who have already submitted assignment 3, please resubmit, testing is now enabled
+
+    A small hint concerning the Iterator: it is a built in java interface, no need to create an iterator class. You can get an Iterator from an ArrayList by using arrayList.iterator();
+
+    Posted by: Ronald Bethlehem
+
+    Posted to: FEW_X_400561_2014_110 Advanced Programming (2014-2015)
+    Iterator
+
+    Posted on: Saturday, October 11, 2014 1:02:29 PM CEST
+
+    Hi all,
+
+    The most widely used version of java is java7, documentation for the arraylist can be found at: http://docs.oracle.com/javase/7/docs/api/
+
+    For assignment 3: the manual states you should have a Iterator ascending/descendingIterator, this should be Iterator<E> ascending/descendingIterator
+
+    Posted by: Ronald Bethlehem
+
+    Posted to: FEW_X_400561_2014_110 Advanced Programming (2014-2015)
+    Reminder deadline practical
+
+    Posted on: Wednesday, October 8, 2014 7:31:00 AM CEST
+
+    Hello everyone,
+
+    Hereby we want to remind you that the deadline of the practical is 23:59 Friday 17/10/2014. To get a sufficient grade for the course all three assignments need to be approved by your assistant and need to be handed in before the deadline. The average of the three exercises should be equal or greater than 5,5.
+
+    Posted by: Bram Rodenburg
+
+    Posted to: FEW_X_400561_2014_110 Advanced Programming (2014-2015)
+    Automated testing
+
+    Posted on: Tuesday, September 23, 2014 12:25:20 AM CEST
+
+    Hi all,
+
+    A succesful test during upload looks like this:
+
+    Compilation complete
+    Testing... Done
+    Sending email to TA... Done
+
+    If your program does not reach the Done while testing, it is most probably hanging on an empty line, flooding the testscript with errors until it aborts to protect the server.
+
+    You can fix this easily by creating a second scanner, which will only contain the line you are currently processing. Create your processLine method (example) like this:
+
+    processLine(Scanner inBefore, Set s){
+      Scanner in = new Scanner(inBefore.nextLine());
+      //Perform magic
+    }
+
+    By doing this, you are making sure the complete line is gone from the inBefore scanner. I will try to incorporate this in the test program. If you are not sure if this is the case for your latest submission, just resubmit and wait for the submission page to completely load. Disregard the message of a succesful upload, that just implies your file is stored on our system.
+
+    Best of luck
+
+    Posted by: Ronald Bethlehem
+
+    Posted to: FEW_X_400561_2014_110 Advanced Programming (2014-2015)
+    Translations and bugfix
+
+    Posted on: Friday, September 19, 2014 4:04:27 PM CEST
+
+    Hi all,
+
+    All *.java files have been updated. Some small translation errors were fixed, and the ListInterface parameter has been modified
+
+    Posted by: Ronald Bethlehem
+
+    Posted to: FEW_X_400561_2014_110 Advanced Programming (2014-2015)
+    Assignment 1
+
+    Posted on: Thursday, September 18, 2014 12:31:20 PM CEST
+
+    Hi all,
+
+    Please let your program print an empty line after the user presses ctrl-D (or ctrl-Z). You can do this by appending your main method to look like this:
+
+    public static void main(String[] argv){ //No changes  new Program().start(); //No changes
+      System.out.println(); //new
+    }
+
+    Otherwise, the automated test might not register the final line of your output. This is a restriction in the way java runs processes, I am looking for a more permanent solution
+
+    Secondly, please note that the automated test puts all input onto the System.in at once, so do not create more than 1 scanner to System.in
+
+    Finally, please start uploading your files on practool for testing, so your TA can get you your feedback. These submission are not relevant to your grade. Only after passing all tests will a program be accepted!
+
+    Best of luck
+
+    Posted by: Ronald Bethlehem
+
+    Posted to: FEW_X_400561_2014_110 Advanced Programming (2014-2015)
+    Assignment 1
+
+    Posted on: Tuesday, September 16, 2014 8:56:28 PM CEST
+
+    Hi all,
+
+    You can now submit assignment 1 on PracTool (phoenix.labs.vu.nl).
+
+    1. Register an account if you do not already have one.
+    2. Select Advanced Programming, then select your TA. Selecting the wrong TA will send the testreports to the wrong TA, so be careful with selection. I something goes wrong, please drop me an email at r.f.bethlehem@vu.nl
+    3. Select 'click here to upload assignment'
+    4. Select your file, and submit.
+
+    PracTool will take you to the upload page, testing your submission, and storing it in the database. If you receive an error about invalid files, recheck the file you uploaded for the offending file. For other errors, emailme
+
+    Best of luck,
+    Ronald
+
+    Posted by: Ronald Bethlehem
+
+    Posted to: FEW_X_400561_2014_110 Advanced Programming (2014-2015)
+    JavaDoc
+
+    Posted on: Thursday, September 11, 2014 2:28:49 PM CEST
+
+    Hi all,
+
+    The correct extra settings for javadoc in eclipse should be:
+
+    nodeprecated
+    nodeprecatedlist
+    quiet
+    author
+    -tag elements:a:"Elements"
+    -tag structure:a:"Structure"
+    -tag domain:a:"Domain"
+    -tag constructor:a:"Constructor"
+    -tag param
+    -tag precondition:a:"PRE-condition"
+    -tag postcondition:a:"POST-condition"
+    -tag throw
+
+    The manual did not mention the hypen before 'tag' (Credits to Bjarty Garcia for pointing this out), and is partially in Dutch
+
+    Also, the javadoc.exe can be found in the jdk/bin/ folder. Check your java folder in C:\Program Files or C:\Program Files (x86)
+
+    EDIT: structure, not structuer
+
+    Posted by: Ronald Bethlehem
+
+    Posted to: FEW_X_400561_2014_110 Advanced Programming (2014-2015)
+    Rooms
+
+    Posted on: Sunday, September 7, 2014 11:16:47 AM CEST
+
+    Dear students,
+
+    The rooms for the meetings have been published and added to the schedule. 
+
+    Please note that the rooms can change every week. So please check the room of your meetings weekly. 
+
+    Good luck with assignment 1! 
+
+    Course Link/Schedule
+
+    Posted by: Bram Rodenburg
+
+    Posted to: FEW_X_400561_2014_110 Advanced Programming (2014-2015)
+    Group enrollment
+
+    Posted on: Thursday, September 4, 2014 9:27:35 PM CEST
+
+    Dear students,
+
+    Tomorrow at 11:00 o'clock in the morning the group enrollment will be opened. Each group has two meetings a week. A group consists of two persons (no more, no less). Please look carefully at the day, times and weeks of the meetings before you decide which group you join. If you haven't found a partner yet, no worries. Just enroll yourself in a group and we will find a partner for you (we merge all the one person groups this weekend). 
+
+    If you have any questions or experience any trouble regarding the group enrollment, feel free to contact me: Bram Rodenburg, b.p.m.rodenburg@vu.nl.
+
+    Kind regards
+
+    Posted by: Bram Rodenburg
+
+    Posted to: FEW_X_400561_2014_110 Advanced Programming (2014-2015)
+
+Blackboard Learn
+© 1997-2015 Blackboard Inc. All Rights Reserved. U.S. Patent No. 7,493,396 and 7,558,853. Additional Patents Pending.
+
+Accessibility information
+
+Installation details
